@@ -48,6 +48,22 @@ console.log("both have same values");
 else
 console.log("they don't bear same values");
 // task11
+a=1 // 1 is true and 0 is false
+b=1
+console.log( a && b)// logical and
+// task12
+a=1
+b=0
+console.log(a||b);// logical or
+// task13
+a=0
+console.log( !a );// not operator
+//task14
+let num =(5 > 2) ? "true":"false";
+
+
+
+
 
 
 
