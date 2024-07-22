@@ -48,8 +48,22 @@ function mouse(){
     console.log(val);
 }
 // task8
+const car = document.querySelector("#cars");
+const paras = document.querySelector("#para");
 
+ car.addEventListener("change",mouse);
+function mouse(){
+  paras.textContent=car.value;
+}
+// task9
+// task10 
+const form2 =document.querySelector("form1");
+form2.addEventListener("submit",mouse);
+function mouse(){
+    let val =document.createElement("button");
+    form2.document.querySelector("#input").style.backgroundColor="blue";
 
+}
 
 
 
