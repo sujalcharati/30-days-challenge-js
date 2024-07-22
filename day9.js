@@ -26,6 +26,17 @@ elements.setAttribute( "id", "myli" );
 // task8
 document.getElementById("intro").className = "newClass";
 // task9
+const btn = document.querySelector("#btn1");
+btn.addEventListener("click",btns);
+function btns(){
+    document.querySelector("#texting").innerHTML="it's day 10";
+}
+// task10
+const mouse1 = document.querySelector("#mouse");
+mouse1.addEventListener("mouseover",mouse);
+function mouse(){
+    mouse1.style.borderColor="blue";
+}
 
 
 
