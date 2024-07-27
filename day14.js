@@ -1,4 +1,4 @@
-// task1
+// task1 and task2 
 class person{
     constructor(name,age){
         this.name=name;
@@ -7,19 +7,38 @@ class person{
  getGreeting(){
     return `hey ${this.name} your age is ${this.age}`;
  }
+ updatedGreeting(){
+     let age = 18;
+    return `your age is ${age}` ;
  }
-const person = new person('sujal',20);
-console.log(person.getGreeting());
+ }
+const instanceperson = new person('sujal',20);
+console.log(instanceperson.getGreeting());
+console.log(instanceperson.updatedGreeting());
 
-// task2
-class person1{
-    constructor(name,age){
-        this.name=name;
-        this.age=age;
+// task3 and task 4
+class student extends person{
+     constructor(studentid,name,age){
+         super(name,age);
+        this.studentid=studentid;
+    }
+    getMethod(){
+        return `your student id is ${this.studentid}`
+    }
+   getMethod(){
+        return "23sujal";
 }
- getGreeting(){
-    return `hey ${this.name} your age is ${this.age}`;
- }
- }
-const person = new person('sujal',20);
-console.log(person.getGreeting());
+}
+const instancestudent =new student('23sujal');
+console.log(instancestudent.getMethod());
+
+// task5
+class person1{
+    static getstaticMethod(){
+        return "hey welcome to our voice"
+    }
+}
+ const val = person1.getstaticMethod();
+ console.log(val);
+
+// task6
