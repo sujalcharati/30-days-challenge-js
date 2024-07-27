@@ -42,3 +42,31 @@ class person1{
  console.log(val);
 
 // task6
+class student1{  
+    static noofStudents= 20; 
+    constructor(noofStudents){
+        this.noofStudents=noofStudents;
+       noofStudents++;
+   }
+} 
+console.log(student.noofStudents);
+// task7 and task8
+class person2{
+    constructor(firstname, secondname){
+        this.firstname=firstname;
+        this.secondname=secondname;
+    }
+    get name(){
+        return `${thisfirstname} ,${this.secondname}`;
+    }
+    set updatename(names){
+           this.firstname="suchi";
+    }
+}
+const instancename =new person2("sujal","charati");
+console.log(instancename);
+console.log(person2.firstname);
+
+// task9 and task 10 are optional
+ 
+
