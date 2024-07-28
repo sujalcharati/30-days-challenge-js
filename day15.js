@@ -59,3 +59,10 @@ for(i=0;i<arr.length;i++){
 }
 const looping =loop();
 console.log(looping());
+// task 6
+export function collectingItems(){
+    return function innercollectingItems(){
+        
+    }
+
+}
