@@ -60,9 +60,9 @@ for(i=0;i<arr.length;i++){
 const looping =loop();
 console.log(looping());
 // task 6
-export function collectingItems(){
-    return function innercollectingItems(){
-        
-    }
-
+export function collecting(arr){
+    return arr;
 }
+const val4 = collectingItems([1,2,3,4,5]);
+console.log(val4);
+// task7 
