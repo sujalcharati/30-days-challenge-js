@@ -59,4 +59,46 @@ const reverseString=(i)=>{
 }
 console.log(reverseString(4));
 // task 6
+function isPalindrome(str){
+    if(str.length <=1){
+        return  true;
+    }
 
+     if(str[0] === str[str.lenght-1]) {
+          return isPalindrome(str.slice(1,str.length-1));
+        }
+    else{
+        return false;
+    }
+}
+ console.log(isPalindrome("radar"));
+//  task7 
+function findBinaryelement(beg,end,target,arr){
+    while(beg<=end){
+        mid= beg+end/2;
+        if(arr[mid]==target)
+        {
+            return 'element found'
+        }
+        else if (arr[mid]> target) {
+            return findBinaryelement(beg,mid-1,target,arr);
+            
+        } else {
+            return findBinaryelement(mid+1,end,target,arr);
+
+        }
+    }
+}
+console.log(findBinaryelement(0,arr.length-1,3, [1,2,3,4,5]))
+// task8 
+function frequencyCounter(i,target){
+    const arr = [1,2,3,3,4]
+       if(arr[i]== target){
+         return i;
+         
+       }
+       if(i<arr.length){
+        return frequencyCounter(i+=1,target);
+       }
+}
+console.log(frequencyCounter(0,2));
