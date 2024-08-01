@@ -11,3 +11,4 @@ const capitalizedWords = text.match(/\b[A-Z][a-z]*\b/g);
 console.log(capitalizedWords);
 
 // task 4
+ 
