@@ -1,4 +1,4 @@
-<h1>30DAYS_JS_CHALLENGES<h1/>
+<h1>30DAYS_JS_CHALLENGES <h1/>
   
 Day_01: Variable and Data Type
   
